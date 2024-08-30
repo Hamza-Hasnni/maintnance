@@ -9,7 +9,7 @@
     <title>MYTEK</title>
     <style>
         .right-col {
-            background-color: #0052ff;
+            background-color: #6c757d;
             color: white;
             display: flex;
             flex-direction: column;
@@ -20,7 +20,7 @@
         .services,
         .contact-info {
             background-color: white;
-            color: #0052ff;
+            color: #6c757d;
             border-radius: 20px;
             padding: 5px 20px;
             font-weight: bold;
@@ -42,12 +42,12 @@
         }
 
         .gears-grd1 {
-            stop-color: #4fc1ea;
+            stop-color: #6c757d;
             stop-opacity: 1
         }
 
         .gears-grd2 {
-            stop-color: #6435c9;
+            stop-color: #79797c;
             stop-opacity: 1
         }
 
@@ -257,7 +257,26 @@
                 width: 160px;
                 align-items: center;
                 justify-content: center;
+                color: #6c757d !important;
             }
+            .m-info{
+                text-align : center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .service{
+                text-align: center;
+                
+            }
+            .panne{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            
 
 
 
@@ -280,17 +299,17 @@
               display: inline;
               font-size: small;
               padding: 5px;
-              color: #0052ff;
+              color: #666666;
               margin-left: 50px;
               background-color: #dcdcff;
             ">
                             SITE EN MAINTENANCE
                         </p>
                     </div>
-                    <h3 class="text-start fw-bold" style="color: #0052ff; margin-left: 50px; margin-right: 100px">
+                    <h3 class="text-start fw-bold" style="color: #666666; margin-left: 50px; margin-right: 100px">
                         Bientôt de retour
                     </h3>
-                    <p class="text-start fw-bold" style="color: #0052ff; margin-left: 50px; margin-right: 100px">
+                    <p class="text-start fw-bold" style="color: #666666; margin-left: 50px; margin-right: 100px">
                         Nos équipes travaillent à l'amélioration de notre site pour vous
                         proposer de services toujours plus éclairés.<br />
                         Merci de votre patience !
@@ -333,23 +352,23 @@
                         </svg>
                     </div>
                     <!-- contact mobile -->
-                    <div class="d-mobile" style="margin-top: 100px;">
-                        <div>
+                    <div class="row d-mobile" style="margin-top: 100px;">
+                        <div class="col service">
 
-                            <p class=" text-start mt-2" style="color: #ffffff; margin-left: 20px;">Ces services restent
+                            <p class=" text-start mt-2 fw-bold " style="color: #ffffff; margin-left: 20px;">Ces services restent
                                 disponibles :</p>
-                                <div class="d-flex flex-wrap px-3">
+                                <div class="d-flex flex-wrap px-3 m-info">
                                     <span class="services fw-bold px-4 ">Nos magasins</span>
                                     <span class="services fw-bold px-4 ">Service Clients</span>
                                     <span class="services fw-bold px-4 ">Service Entreprise</span>
                                 </div>
                             </div>
-                            <div>
+                            <div class="col panne">
 
-                                <p class=" text-start mt-2" style="color: #ffffff; margin-left: 20px; ">En cas
+                                <p class=" text-start mt-2 fw-bold" style="color: #ffffff; margin-left: 20px; ">En cas
                                     d'urgence ou de panne :</p>
-                                    <div class="d-flex flex-wrap mb-4">
-                                         <p class="contact-info mx-4  px-4 fw-bold d-inline">(+216) 36 360 000</p>
+                                    <div class="d-flex flex-wrap mb-4 m-info">
+                                         <span class="contact-info mx-4  px-4 fw-bold d-inline">(+216) 36 360 000</span>
                                         <span class="services mx-4 px-4 fw-bold">info@mytek.tn</span>
                                         <span class="services mx-4 px-4 fw-bold">devis@mytek.tn</span>
                                     </div>
